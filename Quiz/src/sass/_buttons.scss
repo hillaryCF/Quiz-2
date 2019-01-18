@@ -1,0 +1,46 @@
+// arrows buttons
+.arrow_button_left{
+    background-color: white;
+    border: 0;
+    color: inherit;
+    float: left;
+    padding: 2px;
+}
+#slider_arrow_left{
+    width: 45px;
+    margin-top: 350px;
+    float: left;
+    cursor: pointer;
+}
+.arrow_button_right{
+    padding: 2px;
+    background-color: white;
+    border: 0;
+    color: inherit;
+}
+#slider_arrow_right{
+    width: 45px;
+    margin-top: 350px;
+    cursor: pointer;
+}
+// event buttons
+.event_button{
+    border: 1px solid $grey;
+    background-color: $white;
+    height: 30px;
+    border-radius: 100px;
+}  
+.button_tittle{
+    font-weight: bold;
+    font-size: 12px;
+    color: $grey;
+}
+.button_tittle:hover{
+    color: $white;
+}
+.event_button:hover{
+    background-color: $aqua;
+    border-color: $white;
+}
+
+
