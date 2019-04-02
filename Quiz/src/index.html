@@ -1,94 +1,72 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title> Quiz-2</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/style.css" />
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title> Quiz-2</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css" />
 
 </head>
 <body>
-    <div class="container">
-        <div class="continer_tittle">
-            <h2 id="tittle_principal">Upcoming Events and Activities</h2>
-            <p id="subtitle">We´ve got a full schedule.Follow us to see if Gearheads are hostig exiting events in your area.</p>
-        </div>
-
-        <!-- arrows buttons -->
-        <img src="img/arrow-left.svg" alt="arrow-left" class="arrow_button_left" id="slider_arrow_left">
-        <img src="img/arrow-right.svg" alt="arrow-right" class="arrow_button_right" id="slider_arrow_right">
-
-
-        <!-- slider -->
-        <div id="container_slider">
-            <img src="img/bg-event.jpeg" name="foto" alt="" id="slider_image_first">
-
-            <div id="slider">
-                <p id="slider_tag">Next Eventn</p>
-                <h3 id="slider_date"></h3>
-                <p class="slider_subtittle"></p>
-                <p class="slider_location"></p>
-            </div>
-            <a href="#" id="slider_link" class="clearfix">Get Event Details</a>
-        </div>
-
-        <div class="container_events">
-            <ul>
-                <!-- First event -->
-                <li>
-                    <div id="event_first">
-                        <hr id="event_first_line">
-                        <h3 class="event_tittle" id="e_first"></h3>
-                        <p class="event_name" id="name_first"></p>
-                        <p class="event_location" id="location_first"></p>
-                    </div>
-                    <button type="button" class="event_button"><a href="" target="_blank" class="button_tittle" id="first">Get Event Details</a></button>
-                </li>
-
-                <!-- Second event -->
-                <li>
-                    <div id="event_second"name="hola">
-                        <h3 class="event_tittle" id="e_second"></h3>
-                        <p class="event_name" id="name_second"></p>
-                        <p class="event_location" class="event_location" id="location_second"></p>
-                    </div>
-                    <button type="button" class="event_button"><a href="" target="_blank" class="button_tittle" id="second">Get Event Details</a></button>
-                </li>
-
-                <!-- Third event -->
-                <li>
-                    <div id="event_third">
-                        <h3  class="event_tittle" id="e_third"></h3>
-                        <p class="event_name" id="name_third"></p>
-                        <p class="event_location" id="location_third"></p>
-                    </div>
-                    <button type="button" class="event_button"><a href="" target="_blank" class="button_tittle" id="third">Get Event Details</a></button>
-                </li>
-
-                <!-- Quarter event -->
-                <li>
-                    <div id="event_quarter">
-                        <h3 class="event_tittle" id="e_quarter"></h3>
-                        <p class="event_name" id="name_quarter"></p>
-                        <p class="event_location" id="location_quarter"></p>
-                    </div>
-                    <button type="button" class="event_button"><a href="" target="_blank" class="button_tittle" id="quarter">Get Event Details</a></button>
-                </li>
-
-                <!-- Fifth event -->
-                <li>
-                    <div id="event_fifth">
-                        <h3 class="event_tittle" id="e_fifth"></h3>
-                        <p class="event_name" id="name_fifth"></p>
-                        <p class="event_location" id="location_fifth"></p>
-                    </div>
-                    <button type="button"  class="event_button"><a href="" target="_blank" class="button_tittle" id="fifth">Get Event Details</a></button>
-                </li>
-            </ul>
-        </div>
-        </div>
+  <div class="wrapper">
+    <div class="head">
+      <h2 class="head__tittle">Upcoming Events and Activities</h2>
+      <p class="head__paragraph">We´ve got a full schedule.Follow us to see if Gearheads are hostig exiting events in your area.</p>
     </div>
+
+    <img src="img/arrow-left.svg" alt="arrow-left" class="buttonleft" id="arrowleft-js">
+    <img src="img/arrow-right.svg" alt="arrow-right" class="buttonright" id="arrowright-js">
+
+    <div id="container_slider">
+      <img src="img/bg-event.jpeg" name="foto" alt="" id="slider_image_first">
+
+      <div id="slider">
+        <p id="slider_tag">Next Eventn</p>
+        <h3 id="slider_date"></h3>
+        <p class="slider_subtittle"></p>
+        <p class="slider_location"></p>
+      </div>
+      <a href="#" id="slider_link" class="clearfix">Get Event Details</a>
+    </div>
+
+    <div class="containerevents">
+      <ul>
+        <li>
+          <hr class="events-first__line">
+          <h3 class="events__tittle" id="e_first"></h3>
+          <p class="events__name" id="name_first"></p>
+          <p class="events__location" id="location_first"></p>
+
+          <button type="button" class="event_button"><a href="" target="_blank" class="button_tittle" id="first">Get Event Details</a></button>
+        </li>
+        <li>
+          <h3 class="events__tittle" id="e_second"></h3>
+          <p class="events__name" id="name_second"></p>
+          <p class="events__location" id="location_second"></p>
+          <button type="button" class="event_button"><a href="" target="_blank" class="button_tittle" id="second">Get Event Details</a></button>
+        </li>
+        <li>
+          <h3  class="events__tittle" id="e_third"></h3>
+          <p class="events__name" id="name_third"></p>
+          <p class="events__location" id="location_third"></p>
+          <button type="button" class="event_button"><a href="" target="_blank" class="button_tittle" id="third">Get Event Details</a></button>
+        </li>
+        <li>
+          <h3 class="events__tittle" id="e_quarter"></h3>
+          <p class="events__name" id="name_quarter"></p>
+          <p class="events__location" id="location_quarter"></p>
+          <button type="button" class="event_button"><a href="" target="_blank" class="button_tittle" id="quarter">Get Event Details</a></button>
+        </li>
+        <li>
+          <h3 class="events__tittle" id="e_fifth"></h3>
+          <p class="events__name" id="name_fifth"></p>
+          <p class="events__location" id="location_fifth"></p>
+          <button type="button"  class="event_button"><a href="" target="_blank" class="button_tittle" id="fifth">Get Event Details</a></button>
+        </li>
+      </ul>
+    </div>
+  </div>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/main.js"></script>
 </body>

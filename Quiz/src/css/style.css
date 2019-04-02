@@ -24,27 +24,6 @@ ul {
   content: "";
   clear: both; }
 
-.container {
-  max-width: 1100px;
-  margin: 0 auto; }
-
-.continer_tittle {
-  text-align: center; }
-
-#tittle_principal {
-  font-size: 3em;
-  margin-bottom: 12px; }
-
-#subtitle {
-  font-size: 1em; }
-
-#container_slider {
-  float: left;
-  max-width: 55%;
-  position: relative;
-  display: inline-block;
-  margin-top: 14px; }
-
 #slider_image_first {
   max-width: 100%;
   object-fit: cover;
@@ -96,23 +75,19 @@ ul {
 #slider_link:hover {
   color: #333; }
 
-.container_events {
-  float: right;
-  max-width: 45%; }
-
-.event_tittle {
+.events__tittle {
   font-size: 28px;
   margin-bottom: 10px; }
 
-.event_name {
+.events__name {
   margin-top: 14px;
   margin-bottom: 10px; }
 
-.event_location {
+.events__location {
   font-weight: bold;
   margin-top: 0; }
 
-#event_first_line {
+.events-first__line {
   width: 15px;
   height: 160px;
   margin: 0;
@@ -121,35 +96,25 @@ ul {
   background-color: #73E5A5;
   border-style: none; }
 
-.arrow_button_left {
+.buttonleft {
   background-color: white;
   border: 0;
   color: inherit;
   float: left;
-  padding: 2px; }
-
-#slider_arrow_left {
+  padding: 2px;
   width: 45px;
   margin-top: 350px;
   float: left;
   cursor: pointer; }
 
-.arrow_button_right {
+.buttonright {
   padding: 2px;
   background-color: white;
   border: 0;
-  color: inherit; }
-
-#slider_arrow_right {
+  color: inherit;
   width: 45px;
   margin-top: 350px;
   cursor: pointer; }
-
-.event_button {
-  border: 1px solid #333;
-  background-color: #fff;
-  height: 30px;
-  border-radius: 100px; }
 
 .button_tittle {
   font-weight: bold;
@@ -159,8 +124,39 @@ ul {
 .button_tittle:hover {
   color: #fff; }
 
+.event_button {
+  border: 1px solid #333;
+  background-color: #fff;
+  height: 30px;
+  border-radius: 100px; }
+
 .event_button:hover {
   background-color: #73E5A5;
   border-color: #fff; }
+
+.head {
+  text-align: center; }
+
+.head__tittle {
+  font-size: 3em;
+  margin-bottom: 12px; }
+
+.head__paragraph {
+  font-size: 1em; }
+
+.containerevents {
+  float: right;
+  max-width: 45%; }
+
+.wrapper {
+  max-width: 1100px;
+  margin: 0 auto; }
+
+#container_slider {
+  float: left;
+  max-width: 55%;
+  position: relative;
+  display: inline-block;
+  margin-top: 14px; }
 
 /*# sourceMappingURL=style.css.map */

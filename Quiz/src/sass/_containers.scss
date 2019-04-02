@@ -1,0 +1,30 @@
+.head {
+  text-align: center;
+}
+
+.head__tittle {
+  font-size: 3em;
+  margin-bottom: 12px;
+}
+
+.head__paragraph {
+  font-size: 1em;
+}
+
+.containerevents{
+  float: right;
+  max-width: 45%;
+}
+
+.wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+#container_slider {
+  float: left;
+  max-width: 55%;
+  position: relative;
+  display: inline-block;
+  margin-top: 14px;
+}

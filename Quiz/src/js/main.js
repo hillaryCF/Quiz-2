@@ -1,17 +1,14 @@
 const request = new XMLHttpRequest();
 request.addEventListener('load', function (event) {
-
   const response = event.target.response.events;
   console.log(response[0].hardcoded);
   events(response);
-
-})
+});
 request.responseType = 'json';
 request.open('GET', '/event-api.json');
 request.send();
 
-let container_slider = document.getElementById('container_slider');
-let imagenes = [
+const imagenes = [
   'img/bg-event.jpeg',
   'img/bg-event-2.jpg',
   'img/bg-event-3.jpeg',
@@ -21,28 +18,22 @@ let imagenes = [
 let i = 0;
 let io = 0;
 
-$('#slider_arrow_right').click(function arrows(response){
-  if (i > imagenes.length - 1) i = 0;
+$('#arrowright-js').click(function arrows(response){
+  if(i > imagenes.length - 1) i = 0;
   document.foto.src = imagenes[i];
   i++;
-
   if(io > response.length -1) io = 0;
   $('#slider_date').text(response[io].hardcoded);
   // $('#slider_date').text(response[io].name.text);
 });
 
-$('#slider_arrow_left').click(function arrows(){
+$('#arrowleft-js').click(function arrows(){
   if (i > imagenes.length - 1) i = 0;
   $('#slider_image_first').attr(imagenes[i]);
   i++;
-
-
 });
 
-
-
 function events(response) {
-
   $('#e_first').text(response[0].hardcoded);
   $('#name_first').text(response[0].name.text);
   $('#location_first').text(response[0].venue.name);
@@ -75,4 +66,3 @@ function events(response) {
   const first = document.getElementById('first');
   first.setAttribute('href', response[0].url);
 }
-
